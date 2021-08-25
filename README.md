@@ -1,1 +1,1 @@
-# WaveBeach
+# Blind Beach

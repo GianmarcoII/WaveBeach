@@ -1,0 +1,570 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Besley:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;700;900&display=swap");
+input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+select:focus,
+textarea {
+  font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: #313D5A;
+  font-family: "Barlow";
+  font-weight: 300;
+}
+
+.mt-1 {
+  margin-top: 50px;
+}
+
+.mt-2 {
+  margin-top: 100px;
+}
+
+.mt-3 {
+  margin-top: 150px;
+}
+
+.mb-1 {
+  margin-bottom: 50px;
+}
+
+.mb-2 {
+  margin-bottom: 100px;
+}
+
+.mb-3 {
+  margin-bottom: 150px;
+}
+
+.lg {
+  font-size: 1.4rem;
+  font-weight: 900;
+  font-family: "Inconsolata";
+  font-style: italic;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: .5rem;
+  background: #fff;
+}
+
+.header .logo_container {
+  max-width: 64px;
+  max-height: 64px;
+}
+
+.header .logo_container .logo {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.header .menu {
+  list-style-type: none;
+  -webkit-transition: left 500ms ease;
+  transition: left 500ms ease;
+}
+
+.header .menu li {
+  display: inline-block;
+}
+
+.header .menu li a {
+  text-decoration: none;
+  color: #313D5A;
+  font-weight: 500;
+  margin-left: .5rem;
+}
+
+.header .menu li a:last-child {
+  margin-right: .5rem;
+}
+
+.header .mobile {
+  font-size: 1.5rem;
+  color: #313D5A;
+  cursor: pointer;
+  display: none !important;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero .arrow {
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  -webkit-transition: 500ms ease all;
+  transition: 500ms ease all;
+}
+
+.hero .arrow:hover {
+  -webkit-transform: translateY(10%);
+          transform: translateY(10%);
+}
+
+.hero .copy {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.hero .copy h1 {
+  font-weight: 900;
+  font-size: clamp(2rem, 5vw, 4rem);
+  color: #fff;
+  font-family: "Besley";
+}
+
+.hero .copy .text {
+  height: 100%;
+  width: 100%;
+  padding: 0 10rem;
+  padding-bottom: 1rem;
+  padding-top: .5rem;
+}
+
+.hero .copy .text p {
+  color: #fff;
+  font-weight: 400;
+}
+
+.hero .copy .cta {
+  display: inline-block;
+  background: #CBC5EA;
+  padding: .4rem .8rem;
+  text-decoration: none;
+  font-weight: 700;
+  color: #313D5A;
+}
+
+.banner {
+  width: 100%;
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background: #73628A;
+}
+
+.banner .banner_img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
+  height: 100%;
+}
+
+.banner .banner_img img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.banner .banner_body {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banner .banner_body .text_container {
+  width: 100%;
+  padding: 1rem;
+}
+
+.banner .banner_body .text_container h3 {
+  font-size: clamp(1.4rem, 2.5vw, 1.6rem);
+  margin-bottom: .5rem;
+  font-family: "Besley";
+  color: #fff;
+}
+
+.banner .banner_body .text_container p {
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.banner .banner_body .text_container .cta {
+  display: inline-block;
+  background: #CBC5EA;
+  color: #313D5A;
+  text-decoration: none;
+  padding: .4rem .8rem;
+  font-weight: 700;
+}
+
+.about_us {
+  background: #183642;
+  width: 100%;
+  height: 75vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.about_us .img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
+  height: 100%;
+}
+
+.about_us .img img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.about_us .body {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about_us .body .text_container {
+  padding: 1rem;
+}
+
+.about_us .body .text_container h3 {
+  color: #fff;
+  font-size: clamp(1.4rem, 2.5vw, 1.6rem);
+  font-family: "Besley";
+}
+
+.about_us .body .text_container p {
+  margin-top: 0.5rem;
+  color: #fff;
+  font-weight: 400;
+}
+
+.menu_container {
+  background: #183642;
+  width: 100%;
+  height: 75vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.menu_container .img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
+  height: 100%;
+}
+
+.menu_container .img img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.menu_container .body {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu_container .body .text_container {
+  padding: 1rem;
+}
+
+.menu_container .body .text_container h3 {
+  color: #fff;
+  font-size: clamp(1.4rem, 2.5vw, 1.6rem);
+  font-family: "Besley";
+}
+
+.menu_container .body .text_container p {
+  margin-top: 0.5rem;
+  color: #fff;
+  font-weight: 400;
+}
+
+.menu_container .body .text_container .cta {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: .4rem .8rem;
+  background: #CBC5EA;
+  text-decoration: none;
+  color: #313D5A;
+  font-weight: 500;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  background: #fff;
+  padding: 0.5rem;
+}
+
+.footer ul {
+  list-style-type: none;
+}
+
+.footer ul li {
+  display: inline-block;
+}
+
+.footer ul li a {
+  font-weight: 400;
+  text-decoration: none;
+  color: #313D5A;
+  margin-right: .5rem;
+}
+
+.footer .logo_container {
+  width: 64px;
+  height: 64px;
+}
+
+.footer .logo_container img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.footer sub {
+  font-size: .9rem;
+  font-weight: 500;
+  color: #313D5A;
+  margin-right: 0.5rem;
+}
+
+.contact {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact h3 {
+  margin-bottom: 2rem;
+  font-size: clamp(1.4rem, 2.5vw, 1.6rem);
+  font-family: "Besley";
+  color: #fff;
+}
+
+.contact input {
+  margin-top: .5rem;
+  padding: .4rem .8rem;
+  min-width: 200;
+  font-family: "Inconsolata";
+  max-width: 300px;
+  width: 100%;
+}
+
+.contact textarea {
+  margin-top: .5rem;
+  min-width: 300px;
+  font-family: 'Inconsolata';
+  padding: .5rem;
+}
+
+.contact input[type=submit] {
+  background: #CBC5EA;
+  color: #313D5A;
+  border: 0;
+  font-family: "Barlow";
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  .header .logo {
+    position: relative;
+    z-index: 1;
+  }
+  .header .menu {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    text-align: center;
+  }
+  .header .menu li:first-child {
+    margin-top: 8rem !important;
+  }
+  .header .menu li {
+    position: relative;
+    display: block !important;
+  }
+  .header .menu li a {
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: "Besley";
+  }
+  .header .mobile {
+    display: block !important;
+    z-index: 1;
+  }
+  .header .open {
+    left: 0 !important;
+  }
+  .hero {
+    height: 60vh !important;
+  }
+  .hero .copy .text {
+    padding: 1rem;
+  }
+  .banner_container .banner {
+    height: auto;
+  }
+  .banner_container .banner .banner_img {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+  }
+  .banner_container .banner .banner_body {
+    height: auto;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+  }
+  .about_us {
+    height: auto;
+  }
+  .about_us .img {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+  }
+  .about_us .body {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+  }
+  .menu_container {
+    height: auto;
+  }
+  .menu_container .img {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+  }
+  .menu_container .body {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+  }
+  .contact {
+    height: auto;
+  }
+  .contact .container input {
+    max-width: 230px !important;
+  }
+  .contact .container textarea {
+    min-width: 200px !important;
+    max-width: 230px !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */
